@@ -4,15 +4,6 @@
 
 from Mode import AES, Reg
 
-
-MODE_DICT ={
-    "AES":AES,
-    "REG": Reg
-}
-
-END_SET = set(["q", "exit", "quit"])
-
-
 class ToolKit():
     def __init__(self):
         self.__M0DE_DICT = {
@@ -26,7 +17,7 @@ class ToolKit():
 
 def main():
     
-    
+    pass
 
 
 if __name__ == "__main__":
