@@ -1,0 +1,1 @@
+This is a rewrite of the existing Crypto Tool Kit written by Steven Guan. This rewrite will clean up boiler plate codes and other mess.
