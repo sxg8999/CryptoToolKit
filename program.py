@@ -2,6 +2,7 @@
 #
 #@author Steven Guan
 
+from Mode import AES, Reg
 
 
 MODE_DICT ={
@@ -20,10 +21,12 @@ class ToolKit():
         }
         self.__END_SET = set(["q", "exit", "quit"])
     
+    
 
 
 def main():
-    pass
+    
+    
 
 
 if __name__ == "__main__":
