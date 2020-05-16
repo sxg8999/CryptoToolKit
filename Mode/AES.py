@@ -8,18 +8,21 @@ from Module.AES import S_Box
 class AES():
 
     def __init__(self):
+        self.__name = "AES"
+        self.__commands = {
+            "sbox" : s_box,
+        }
         
-        pass
 
     def s_box(self, _val, config = "ENCRYPTION"):
         S_Box.s_box_affine_mapping(_val, config)
 
 
-
-
-
-
-    def getCommands():
-        pass
+    def getCommands(self):
+        return self.__comands
+    
+    def getName(self):
+        return self.__name
+    
 
 
