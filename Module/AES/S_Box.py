@@ -68,9 +68,3 @@ def s_box_affine_mapping(_val, config = "ENCRYPTION"):
 
         print(result)
         
-
-        
-        
-
-s_box_affine_mapping("2f")                          #OUTPUT: 0x25
-s_box_affine_mapping("25", config = "DECRYPTION")   #OUTPUT: 0x2F 

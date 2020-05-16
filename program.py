@@ -40,17 +40,16 @@ class ToolKit():
                 mode_name = args[1].upper()
                 self.__mode = self.__M0DE_DICT.get(mode_name)
             else:
-                analyze(args)
+                self.__mode.analyze(args)
         
-    def analyze(self, args):
-        pass
+    
     
 
 
 def main():
+    tk = ToolKit()
+    tk.run()
     
-
-    pass
 
 
 if __name__ == "__main__":

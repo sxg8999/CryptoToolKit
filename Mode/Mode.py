@@ -1,10 +1,10 @@
 class Mode():
 
     def __init__(self):
-        self.command = {}
+        self.commands = {}
 
 
     def analyze(self, args):
         funcName = args[0]
-        func = self.command.get(funcName)
+        func = self.commands.get(funcName)
         func(args[1:])

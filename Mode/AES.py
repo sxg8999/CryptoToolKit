@@ -4,13 +4,15 @@
 
 import numpy as np
 from Module.AES import S_Box
+from Mode.Mode import Mode
 
-class AES():
+
+class AES(Mode):
 
     def __init__(self):
         self.__name = "AES"
         self.__commands = {
-            "sbox" : s_box,
+            "sbox" : self.s_box,
         }
         
         
@@ -26,11 +28,6 @@ class AES():
             else:
                 print("Wrong Command")
             
-        
-
-
-    def getCommands(self):
-        return self.__comands
     
     def getName(self):
         return self.__name
