@@ -13,9 +13,20 @@ class AES():
             "sbox" : s_box,
         }
         
+        
 
-    def s_box(self, _val, config = "ENCRYPTION"):
-        S_Box.s_box_affine_mapping(_val, config)
+    def s_box(self, args):
+        
+        _len = args.__len__()
+        if _len == 1:
+            S_Box.s_box_affine_mapping(args[0])
+        elif _len == 2:
+            if args[0] == "-i":
+                S_Box.s_box_affine_mapping(args[1], config = "DECRYPTION")
+            else:
+                print("Wrong Command")
+            
+        
 
 
     def getCommands(self):

@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def s_box_affine_mapping(_val, config):
+def s_box_affine_mapping(_val, config = "ENCRYPTION"):
         """
         Preconditions: 
             -_val is a string representation of a hexadecimal value
