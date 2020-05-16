@@ -1,11 +1,5 @@
 import numpy as np
 
-def BinStr(_str):
-    _hexVal = int(_str,16)  #converts inverseVal to hex
-    _binVal = bin(_hexVal)        #converst the hexVal to binary
-    _bin_str = str(_binVal)[2:]
-    return _bin_str
-
 
 def s_box_affine_mapping(_val, config = "ENCRYPTION"):
         """
