@@ -5,12 +5,16 @@
 from Mode import AES, Reg
 
 class ToolKit():
+
     def __init__(self):
         self.__M0DE_DICT = {
             "AES": AES,
             "REG": Reg
         }
         self.__END_SET = set(["q", "exit", "quit"])
+    
+    def run(self):
+        pass
         
     
     
