@@ -4,6 +4,7 @@ class Mode():
         self.command = {}
 
 
-    def analyze(self, funcName, args):
+    def analyze(self, args):
+        funcName = args[0]
         func = self.command.get(funcName)
-        
+        func(args[1:])
