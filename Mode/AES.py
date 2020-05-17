@@ -27,7 +27,7 @@ class AES(Mode):
                 S_Box.s_box_affine_mapping(args[1], config = "DECRYPTION")
             else:
                 print("Wrong Command")
-            
+        
     
     def getName(self):
         return self.__name
